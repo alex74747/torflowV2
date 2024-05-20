@@ -18,7 +18,7 @@
     'use strict';
 
 	var VERSION = '1.0.0';
-	var COLUMNS = ['Name','Fingerprint','Flags','IP','OrPort','ObservedBW','Uptime','GuardClients','DirClients','Longitude','Latitude'];
+	var COLUMNS = ['Name','Fingerprint','Flags','IP','OrPort','ObservedBW','GuardClients','DirClients','Uptime','Longitude','Latitude'];
 	var DB_ORDER = 'fingerprint,name,flags,ip,port,bandwidth,dirclients,lat,lng,date';
 
 	var parseRelayLine = function(csvLine,dateStr) {
