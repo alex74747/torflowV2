@@ -1,3 +1,5 @@
+# To be done : 
+Fix npm packages security (upgrade package version)
 # TorFlow
 
 > Data flow in the Tor network
