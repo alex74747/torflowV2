@@ -41,10 +41,10 @@
     };
 
     var updateRelays = function(relaySpecs,callback) {
-    	connectionPool.query(
-    		'INSERT INTO relays (' + relayParser.DB_ORDER + ') VALUES ?',
-    		[relaySpecs],
-    		callback);
+        connectionPool.query(
+            'INSERT INTO relays (' + relayParser.DB_ORDER + ') VALUES ?',
+            [relaySpecs],
+            callback);
     };
 
     var getRelays = function(date,callback) {

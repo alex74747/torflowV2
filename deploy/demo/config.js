@@ -3,7 +3,7 @@ var config = {
         host     : 'MYSQL',
         user     : 'MyT0rUs3r',
         password : 'MyT0rPassw3rd',
-    	database : 'torflow'
+        database : 'torflow'
     }
 };
 

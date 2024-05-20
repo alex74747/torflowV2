@@ -16,20 +16,20 @@
 
 (function() {
     'use strict';
-	
-	var express = require('express');
-	var router = express.Router();
-	var path = require('path');
+    
+    var express = require('express');
+    var router = express.Router();
+    var path = require('path');
 
-	/**
-	 * GET /map/:map/:zoom/:x/:y
-	 */
-	router.get('/:map/:zoom/:x/:y', function(req, res) {
-		var params = req.params;
-		var filePath = __dirname + '/../map/' + params.map + '/' + params.zoom + '/' + params.x + '/' + params.y;
-		res.sendFile(path.resolve(filePath));
-	});
+    /**
+     * GET /map/:map/:zoom/:x/:y
+     */
+    router.get('/:map/:zoom/:x/:y', function(req, res) {
+        var params = req.params;
+        var filePath = __dirname + '/../map/' + params.map + '/' + params.zoom + '/' + params.x + '/' + params.y;
+        res.sendFile(path.resolve(filePath));
+    });
 
-	module.exports = router;
+    module.exports = router;
 
 }());

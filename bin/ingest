@@ -21,8 +21,8 @@ var db_init = require('../db/db_init');
 var async = require('async');
 
 if (process.argv.length < 3) {
-	console.log('usage:\n\tnode bin/ingest %DATA_DIRECTORY%');
-	console.log('\twhere DATA_DIRECTORY% is the absolute path to the directory containing the csv files to import.');
+    console.log('usage:\n\tnode bin/ingest %DATA_DIRECTORY%');
+    console.log('\twhere DATA_DIRECTORY% is the absolute path to the directory containing the csv files to import.');
 }
 
 var filePath = path.resolve(process.argv[2]);
@@ -30,21 +30,21 @@ console.log('Importing from ' + filePath);
 
 
 async.series([
-	// initialize the database
-	function(done) {
-		db_init.initialize(done);
-	},
-	// ingest files
-	function(done) {
-		ingestFiles(filePath,done);
-	}],
-	// finally
-	function(err) {
-		if (err) {
-			console.trace(err.message);
-			console.log('IMPORT FAILED');
-		} else {
-			console.log('IMPORT COMPLETED SUCCESSFULLY');
-		}
-		process.exit(0);
-	});
+    // initialize the database
+    function(done) {
+        db_init.initialize(done);
+    },
+    // ingest files
+    function(done) {
+        ingestFiles(filePath,done);
+    }],
+    // finally
+    function(err) {
+        if (err) {
+            console.trace(err.message);
+            console.log('IMPORT FAILED');
+        } else {
+            console.log('IMPORT COMPLETED SUCCESSFULLY');
+        }
+        process.exit(0);
+    });
