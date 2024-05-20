@@ -403,7 +403,7 @@
         });
         // add handler to github button
         $githubButton.click( function() {
-            window.open('https://github.com/unchartedsoftware/torflow', '_blank');
+            window.open('https://github.com/alex74747/torflowV2', '_blank');
         });
 
         if (!IS_MOBILE) {

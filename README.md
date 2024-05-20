@@ -1,10 +1,11 @@
-# To be done : 
+# THIS IS NOT A SERIOUS FORK (FOR NOW)
+# To be done 
 Fix npm packages security (upgrade package version)
 # TorFlow
 
 > Data flow in the Tor network
 
-![Image of TorFlow](https://github.com/unchartedsoftware/torflow/raw/master/public/sample.png)
+![Image of TorFlow](https://github.com/alex74747/torflowV2/raw/master/public/sample.png)
 
 ## Building
 
