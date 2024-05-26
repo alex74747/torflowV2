@@ -75,7 +75,7 @@
         // hidden services
         hiddenServiceProbability : 0.04,
         // html config
-        title : 'TorFlow',
+        title : 'TorFlowV2',
         summary :
             '<h2>Data Flow in the Tor Network</h2>' +
             '<p>The Tor network is a group of volunteer-operated servers (relays) that allows people to improve their privacy and' +
