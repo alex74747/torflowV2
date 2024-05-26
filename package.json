@@ -7,7 +7,8 @@
   },
   "contributors": [
     "Chris Dickson <cdickson@uncharted.software>",
-    "Kevin Birk <kbirk@uncharted.software>"
+    "Kevin Birk <kbirk@uncharted.software>",
+	"Alex74747 <alex74747dev@proton.me>"
   ],
   "dependencies": {
     "async": "1.4.2",
